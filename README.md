@@ -504,4 +504,3 @@ Built for Smart India Hackathon 2026.
 This repository contains the current working implementation of Sahaj
 Setu. Features marked as pending are planned for subsequent development
 phases.
-Hello
