@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sahaj Setu | Officer Dashboard</title>
+
+    <link rel="stylesheet" href="officer-dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+
+            <div class="logo-icon">S</div>
+
+            <div>
+                <h2>Sahaj Setu</h2>
+                <span>Government Portal</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="nav-item active">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="#applicationsSection" class="nav-item">
+                <span>📋</span>
+                Applications
+            </a>
+
+            <a href="#applicationsSection" class="nav-item">
+                <span>🔍</span>
+                Review Applications
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>📄</span>
+                Documents
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>🏢</span>
+                Departments
+            </a>
+
+            <!-- JOINT INSPECTIONS -->
+            <a href="#inspectionsSection" class="nav-item">
+                <span>📅</span>
+                Inspections
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>🔔</span>
+                Notifications
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span>⚙️</span>
+                Settings
+            </a>
+
+            <button
+                class="logout-btn"
+                onclick="logoutOfficer()"
+            >
+                <span>↪</span>
+                Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content">
+
+
+        <!-- ================= TOP BAR ================= -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>Officer Dashboard</h1>
+
+                <p>
+                    Monitor and manage industrial approval applications.
+                </p>
+
+            </div>
+
+
+            <div class="officer-profile">
+
+                <div class="notification">
+
+                    🔔
+
+                    <span class="notification-dot"></span>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <div class="profile-avatar">
+                        O
+                    </div>
+
+                    <div>
+
+                        <strong id="officerName">
+                            Officer
+                        </strong>
+
+                        <span id="officerDepartment">
+                            Government Officer
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= STAT CARDS ================= -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    📋
+                </div>
+
+                <div>
+
+                    <span>
+                        Total Applications
+                    </span>
+
+                    <h2 id="totalApplications">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    ⏳
+                </div>
+
+                <div>
+
+                    <span>
+                        Pending Review
+                    </span>
+
+                    <h2 id="pendingApplications">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+                    ✓
+                </div>
+
+                <div>
+
+                    <span>
+                        Approved
+                    </span>
+
+                    <h2 id="approvedApplications">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon red">
+                    !
+                </div>
+
+                <div>
+
+                    <span>
+                        Rejected
+                    </span>
+
+                    <h2 id="rejectedApplications">
+                        0
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= QUICK OVERVIEW ================= -->
+
+        <section class="overview-grid">
+
+
+            <!-- APPLICATION OVERVIEW -->
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Application Overview
+                        </h3>
+
+                        <p>
+                            Current application status summary
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="outline-btn"
+                        onclick="document.getElementById('applicationsSection').scrollIntoView({ behavior: 'smooth' })"
+                    >
+                        View All
+                    </button>
+
+                </div>
+
+
+                <div class="overview-bars">
+
+
+                    <div class="bar-row">
+
+                        <div>
+
+                            <span>
+                                Submitted
+                            </span>
+
+                            <strong id="submittedCount">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-fill submitted"
+                                id="submittedProgress"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="bar-row">
+
+                        <div>
+
+                            <span>
+                                Under Review
+                            </span>
+
+                            <strong id="reviewCount">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-fill review"
+                                id="reviewProgress"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="bar-row">
+
+                        <div>
+
+                            <span>
+                                Approved
+                            </span>
+
+                            <strong id="approvedCount">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-fill approved"
+                                id="approvedProgress"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="bar-row">
+
+                        <div>
+
+                            <span>
+                                Rejected
+                            </span>
+
+                            <strong id="rejectedCount">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-fill rejected"
+                                id="rejectedProgress"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SYSTEM INSIGHTS -->
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            System Insights
+                        </h3>
+
+                        <p>
+                            Sahaj Setu monitoring
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="insight-item">
+
+                    <span class="insight-icon">
+                        ⚡
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Fast Processing
+                        </strong>
+
+                        <p>
+                            Applications are digitally tracked.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="insight-item">
+
+                    <span class="insight-icon">
+                        🔗
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Unified Workflow
+                        </strong>
+
+                        <p>
+                            Departments can coordinate through one platform.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="insight-item">
+
+                    <span class="insight-icon">
+                        🤖
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            AI Assistance
+                        </strong>
+
+                        <p>
+                            Risk and delay prediction available.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- APPLICATION TABLE -->
+        <!-- ================================================= -->
+
+        <section
+            class="dashboard-card applications-section"
+            id="applicationsSection"
+        >
+
+            <div class="card-header">
+
+                <div>
+
+                    <h3>
+                        Recent Applications
+                    </h3>
+
+                    <p>
+                        Latest applications submitted through Sahaj Setu
+                    </p>
+
+                </div>
+
+
+                <div class="table-actions">
+
+                    <input
+                        type="text"
+                        id="applicationSearch"
+                        placeholder="Search application..."
+                        oninput="searchApplications()"
+                    >
+
+
+                    <select
+                        id="statusFilter"
+                        onchange="filterApplications()"
+                    >
+
+                        <option value="all">
+                            All Status
+                        </option>
+
+                        <option value="Submitted">
+                            Submitted
+                        </option>
+
+                        <option value="Under Review">
+                            Under Review
+                        </option>
+
+                        <option value="Approved">
+                            Approved
+                        </option>
+
+                        <option value="Rejected">
+                            Rejected
+                        </option>
+
+                        <option value="Query Raised">
+                            Query Raised
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Application ID
+                            </th>
+
+                            <th>
+                                Applicant
+                            </th>
+
+                            <th>
+                                Approval
+                            </th>
+
+                            <th>
+                                Department
+                            </th>
+
+                            <th>
+                                Submitted
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="applicationsTableBody">
+
+                        <tr>
+
+                            <td
+                                colspan="7"
+                                class="empty-table"
+                            >
+                                No applications loaded yet.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- JOINT INSPECTION MANAGEMENT -->
+        <!-- ================================================= -->
+
+        <section
+            class="dashboard-card inspections-section"
+            id="inspectionsSection"
+        >
+
+            <!-- HEADER -->
+
+            <div class="card-header">
+
+                <div>
+
+                    <h3>
+                        Joint Inspection Management
+                    </h3>
+
+                    <p>
+                        Coordinate, schedule and monitor inspections across departments.
+                    </p>
+
+                </div>
+
+
+                <div class="inspection-header-actions">
+
+                    <button
+                        class="outline-btn"
+                        onclick="loadOfficerInspections()"
+                    >
+                        ↻ Refresh
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INSPECTION SUMMARY -->
+
+            <div class="inspection-summary-grid">
+
+
+                <div class="inspection-summary-card">
+
+                    <div class="inspection-summary-icon">
+                        📅
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Inspections
+                        </span>
+
+                        <strong id="totalInspections">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="inspection-summary-card">
+
+                    <div class="inspection-summary-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Coordination Required
+                        </span>
+
+                        <strong id="coordinationInspections">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="inspection-summary-card">
+
+                    <div class="inspection-summary-icon">
+                        🗓️
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Scheduled
+                        </span>
+
+                        <strong id="scheduledInspections">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="inspection-summary-card">
+
+                    <div class="inspection-summary-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Completed
+                        </span>
+
+                        <strong id="completedInspections">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- INSPECTION TABLE -->
+
+            <div class="inspection-table-wrapper">
+
+                <table class="inspection-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Application ID
+                            </th>
+
+                            <th>
+                                Business
+                            </th>
+
+                            <th>
+                                Departments
+                            </th>
+
+                            <th>
+                                Suggested Date
+                            </th>
+
+                            <th>
+                                Scheduled Date
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="inspectionsTableBody">
+
+                        <tr>
+
+                            <td
+                                colspan="7"
+                                class="empty-table"
+                            >
+                                No joint inspections found.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- CREATE / SCHEDULE INSPECTION MODAL -->
+        <!-- ================================================= -->
+
+        <div
+            id="inspectionModal"
+            class="inspection-modal"
+            style="display: none;"
+        >
+
+            <div class="inspection-modal-content">
+
+
+                <div class="inspection-modal-header">
+
+                    <div>
+
+                        <h3>
+                            Joint Inspection
+                        </h3>
+
+                        <p id="inspectionModalApplication">
+                            Application
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="modal-close-btn"
+                        onclick="closeInspectionModal()"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+
+                <div class="inspection-modal-body">
+
+
+                    <!-- APPLICATION ID -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Application ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="inspectionApplicationId"
+                            readonly
+                        >
+
+                    </div>
+
+
+
+                    <!-- DEPARTMENTS -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Departments
+                        </label>
+
+                        <input
+                            type="text"
+                            id="inspectionDepartments"
+                            placeholder="e.g. Pollution Control, Fire Safety"
+                        >
+
+                        <small>
+                            Separate multiple departments with commas.
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- LOCATION -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Inspection Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="inspectionLocation"
+                            placeholder="Inspection location"
+                        >
+
+                    </div>
+
+
+
+                    <!-- SUGGESTED DATE -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Suggested Inspection Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="inspectionSuggestedDate"
+                        >
+
+                    </div>
+
+
+
+                    <!-- NOTES -->
+
+                    <div class="form-group">
+
+                        <label>
+                            Notes
+                        </label>
+
+                        <textarea
+                            id="inspectionNotes"
+                            rows="4"
+                            placeholder="Add inspection coordination notes..."
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <div
+                        id="inspectionModalMessage"
+                        class="inspection-modal-message"
+                    ></div>
+
+                </div>
+
+
+
+                <div class="inspection-modal-footer">
+
+                    <button
+                        type="button"
+                        class="outline-btn"
+                        onclick="closeInspectionModal()"
+                    >
+                        Cancel
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        onclick="createJointInspection()"
+                    >
+                        Create Inspection
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================================= -->
+        <!-- SCHEDULE INSPECTION MODAL -->
+        <!-- ================================================= -->
+
+        <div
+            id="scheduleInspectionModal"
+            class="inspection-modal"
+            style="display: none;"
+        >
+
+            <div class="inspection-modal-content">
+
+
+                <div class="inspection-modal-header">
+
+                    <div>
+
+                        <h3>
+                            Schedule Inspection
+                        </h3>
+
+                        <p id="scheduleInspectionApplication">
+                            Application
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="modal-close-btn"
+                        onclick="closeScheduleInspectionModal()"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+
+                <div class="inspection-modal-body">
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Application ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="scheduleApplicationId"
+                            readonly
+                        >
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Scheduled Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="scheduledInspectionDate"
+                        >
+
+                    </div>
+
+
+
+                    <div
+                        id="scheduleModalMessage"
+                        class="inspection-modal-message"
+                    ></div>
+
+                </div>
+
+
+
+                <div class="inspection-modal-footer">
+
+                    <button
+                        type="button"
+                        class="outline-btn"
+                        onclick="closeScheduleInspectionModal()"
+                    >
+                        Cancel
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        onclick="scheduleJointInspection()"
+                    >
+                        Schedule Inspection
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="officer-dashboard.js"></script>
+
+</body>
+</html>
