@@ -336,9 +336,8 @@ const calculateApplicationRisk = async (req, res) => {
         // Calculate risk
         // ----------------------------------------
 
-        const riskResult = calculateRiskScore(
-            application
-        );
+        const riskResult =
+        await calculateRiskScore(application);
 
         // ----------------------------------------
         // Save risk data

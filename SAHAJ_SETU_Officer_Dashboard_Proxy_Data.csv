@@ -1,0 +1,51 @@
+Application ID,Applicant Name,Business Name,District,Industry,Department,Approval Type,Investment (₹ Cr),Status,Risk Score,Risk Level,Risk Recommendation,Submitted At
+SAH-2026-0001,Applicant 1,Nova Enterprises,Thane,Food Processing,MIDC,Industrial Registration,6.98,Rejected,31,Medium,Additional document verification recommended,2026-07-04
+SAH-2026-0002,Applicant 2,Sahyadri Manufacturing,Nanded,Manufacturing,Fire Department,Environmental Clearance,53.84,Query Raised,21,Low,Proceed with standard verification,2026-07-28
+SAH-2026-0003,Applicant 3,Nova Industries,Nashik,Renewable Energy,Labour Department,Fire NOC,12.08,Approved,11,Low,Proceed with standard verification,2026-09-14
+SAH-2026-0004,Applicant 4,Pragati Solutions,Nanded,Automobile,MIDC,Labour Registration,40.45,Rejected,10,Low,Proceed with standard verification,2026-07-13
+SAH-2026-0005,Applicant 5,Pragati Manufacturing,Thane,IT & Software,MIDC,Environmental Clearance,58.09,Submitted,57,Medium,Additional document verification recommended,2026-09-19
+SAH-2026-0006,Applicant 6,Sunrise Solutions,Satara,Pharmaceuticals,Pollution Control Board,Fire NOC,26.97,Approved,29,Low,Proceed with standard verification,2026-07-13
+SAH-2026-0007,Applicant 7,Maharashtra Manufacturing,Thane,Food Processing,Industries Department,Labour Registration,20.61,Query Raised,37,Medium,Additional document verification recommended,2026-09-16
+SAH-2026-0008,Applicant 8,Sahyadri Industries,Kolhapur,Renewable Energy,Labour Department,Factory License,16.22,Query Raised,58,Medium,Additional document verification recommended,2026-07-08
+SAH-2026-0009,Applicant 9,Vardhan Foods,Satara,Food Processing,Labour Department,Environmental Clearance,18.87,Query Raised,47,Medium,Additional document verification recommended,2026-07-28
+SAH-2026-0010,Applicant 10,Sunrise Manufacturing,Raigad,Pharmaceuticals,Pollution Control Board,Environmental Clearance,38.46,Submitted,9,Low,Proceed with standard verification,2026-09-13
+SAH-2026-0011,Applicant 11,Maharashtra Tech,Raigad,IT & Software,Industries Department,Labour Registration,44.89,Rejected,93,High,Priority review and detailed inspection recommended,2026-07-20
+SAH-2026-0012,Applicant 12,Shakti Tech,Nagpur,Automobile,Labour Department,Factory License,22.37,Under Review,22,Low,Proceed with standard verification,2026-09-09
+SAH-2026-0013,Applicant 13,Maharashtra Manufacturing,Nagpur,Automobile,Fire Department,Industrial Registration,15.32,Approved,13,Low,Proceed with standard verification,2026-08-03
+SAH-2026-0014,Applicant 14,Shakti Manufacturing,Kolhapur,Chemicals,MIDC,Factory License,69.72,Approved,37,Medium,Additional document verification recommended,2026-09-06
+SAH-2026-0015,Applicant 15,Aarav Industries,Satara,IT & Software,Fire Department,Environmental Clearance,10.07,Rejected,25,Low,Proceed with standard verification,2026-09-11
+SAH-2026-0016,Applicant 16,Sunrise Enterprises,Amravati,Textiles,Labour Department,Labour Registration,74.64,Approved,22,Low,Proceed with standard verification,2026-09-06
+SAH-2026-0017,Applicant 17,Aarav Enterprises,Thane,IT & Software,Labour Department,Factory License,44.33,Under Review,74,High,Priority review and detailed inspection recommended,2026-08-27
+SAH-2026-0018,Applicant 18,Shakti Enterprises,Nagpur,Manufacturing,Labour Department,Factory License,38.8,Approved,29,Low,Proceed with standard verification,2026-09-19
+SAH-2026-0019,Applicant 19,Maharashtra Tech,Nanded,Chemicals,Pollution Control Board,Labour Registration,60.66,Under Review,33,Medium,Additional document verification recommended,2026-09-08
+SAH-2026-0020,Applicant 20,Pragati Foods,Raigad,Chemicals,MIDC,Factory License,5.02,Approved,11,Low,Proceed with standard verification,2026-08-25
+SAH-2026-0021,Applicant 21,Vardhan Enterprises,Raigad,Food Processing,Labour Department,Labour Registration,19.11,Submitted,22,Low,Proceed with standard verification,2026-07-25
+SAH-2026-0022,Applicant 22,Aarav Industries,Amravati,Manufacturing,MIDC,Environmental Clearance,12.89,Rejected,90,High,Priority review and detailed inspection recommended,2026-09-09
+SAH-2026-0023,Applicant 23,Shakti Enterprises,Raigad,Manufacturing,Industries Department,Fire NOC,69.53,Rejected,17,Low,Proceed with standard verification,2026-08-21
+SAH-2026-0024,Applicant 24,Vardhan Enterprises,Thane,Automobile,Pollution Control Board,Factory License,43.65,Query Raised,9,Low,Proceed with standard verification,2026-09-10
+SAH-2026-0025,Applicant 25,Shakti Manufacturing,Satara,Food Processing,MIDC,Industrial Registration,6.47,Under Review,32,Medium,Additional document verification recommended,2026-07-08
+SAH-2026-0026,Applicant 26,Sunrise Industries,Nanded,Textiles,Fire Department,Industrial Registration,3.46,Submitted,43,Medium,Additional document verification recommended,2026-07-31
+SAH-2026-0027,Applicant 27,Pragati Solutions,Thane,Pharmaceuticals,Pollution Control Board,Fire NOC,29.99,Approved,44,Medium,Additional document verification recommended,2026-09-11
+SAH-2026-0028,Applicant 28,Shakti Foods,Nanded,IT & Software,MIDC,Industrial Registration,16.38,Approved,12,Low,Proceed with standard verification,2026-07-10
+SAH-2026-0029,Applicant 29,Sahyadri Solutions,Aurangabad,Food Processing,Industries Department,Industrial Registration,52.91,Query Raised,93,High,Priority review and detailed inspection recommended,2026-07-09
+SAH-2026-0030,Applicant 30,Nova Tech,Nagpur,Food Processing,Labour Department,Factory License,66.78,Query Raised,12,Low,Proceed with standard verification,2026-09-09
+SAH-2026-0031,Applicant 31,Sahyadri Tech,Kolhapur,Textiles,Labour Department,Industrial Registration,36.9,Submitted,10,Low,Proceed with standard verification,2026-09-16
+SAH-2026-0032,Applicant 32,Shakti Industries,Kolhapur,Food Processing,Labour Department,Environmental Clearance,55.72,Query Raised,52,Medium,Additional document verification recommended,2026-08-05
+SAH-2026-0033,Applicant 33,Aarav Industries,Nashik,Manufacturing,Labour Department,Industrial Registration,41.66,Rejected,12,Low,Proceed with standard verification,2026-07-02
+SAH-2026-0034,Applicant 34,Shakti Solutions,Thane,Textiles,MIDC,Fire NOC,58.62,Rejected,27,Low,Proceed with standard verification,2026-08-16
+SAH-2026-0035,Applicant 35,Maharashtra Enterprises,Raigad,Manufacturing,Pollution Control Board,Fire NOC,58.79,Rejected,55,Medium,Additional document verification recommended,2026-07-31
+SAH-2026-0036,Applicant 36,Nova Enterprises,Nagpur,Renewable Energy,MIDC,Labour Registration,17.07,Rejected,41,Medium,Additional document verification recommended,2026-08-01
+SAH-2026-0037,Applicant 37,Sahyadri Industries,Thane,Renewable Energy,Labour Department,Fire NOC,64.89,Approved,19,Low,Proceed with standard verification,2026-07-30
+SAH-2026-0038,Applicant 38,Pragati Industries,Nagpur,Automobile,Pollution Control Board,Industrial Registration,72.21,Approved,31,Medium,Additional document verification recommended,2026-08-21
+SAH-2026-0039,Applicant 39,Pragati Tech,Kolhapur,Renewable Energy,Fire Department,Industrial Registration,9.12,Query Raised,14,Low,Proceed with standard verification,2026-08-25
+SAH-2026-0040,Applicant 40,Shakti Manufacturing,Amravati,Textiles,Labour Department,Labour Registration,5.71,Approved,27,Low,Proceed with standard verification,2026-08-25
+SAH-2026-0041,Applicant 41,Nova Manufacturing,Aurangabad,Renewable Energy,Labour Department,Labour Registration,52.44,Query Raised,12,Low,Proceed with standard verification,2026-07-16
+SAH-2026-0042,Applicant 42,Maharashtra Manufacturing,Nanded,Automobile,Industries Department,Industrial Registration,62.61,Approved,17,Low,Proceed with standard verification,2026-08-18
+SAH-2026-0043,Applicant 43,Pragati Foods,Satara,Chemicals,Pollution Control Board,Industrial Registration,35.75,Under Review,29,Low,Proceed with standard verification,2026-09-13
+SAH-2026-0044,Applicant 44,Pragati Industries,Thane,Automobile,Pollution Control Board,Environmental Clearance,11.48,Submitted,15,Low,Proceed with standard verification,2026-09-04
+SAH-2026-0045,Applicant 45,Aarav Foods,Raigad,Textiles,Industries Department,Labour Registration,30.27,Under Review,60,High,Priority review and detailed inspection recommended,2026-09-17
+SAH-2026-0046,Applicant 46,Sunrise Enterprises,Nashik,Chemicals,MIDC,Industrial Registration,19.07,Submitted,89,High,Priority review and detailed inspection recommended,2026-07-14
+SAH-2026-0047,Applicant 47,Pragati Foods,Nanded,Renewable Energy,Fire Department,Labour Registration,67.34,Rejected,22,Low,Proceed with standard verification,2026-08-29
+SAH-2026-0048,Applicant 48,Nova Manufacturing,Satara,Textiles,Labour Department,Labour Registration,6.27,Approved,15,Low,Proceed with standard verification,2026-08-01
+SAH-2026-0049,Applicant 49,Aarav Enterprises,Nashik,Textiles,Industries Department,Environmental Clearance,53.13,Submitted,21,Low,Proceed with standard verification,2026-08-10
+SAH-2026-0050,Applicant 50,Vardhan Foods,Pune,Textiles,Industries Department,Labour Registration,67.91,Query Raised,8,Low,Proceed with standard verification,2026-09-08
