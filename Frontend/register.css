@@ -55,21 +55,25 @@ body {
     gap: 14px;
 }
 
-.brand-icon {
-    width: 46px;
-    height: 46px;
+/* =========================
+   LOGO
+========================= */
 
-    background: white;
-    color: #102e62;
-
-    border-radius: 8px;
-
+.brand-logo {
+    width: 86px;
+    height: 86px;
+    flex: 0 0 86px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
 
-    font-size: 23px;
-    font-weight: 700;
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
 }
 
 .brand h1 {
@@ -642,5 +646,11 @@ body {
 
     .portal-footer {
         flex-wrap: wrap;
+    }
+
+    .brand-logo {
+        width: 72px;
+        height: 72px;
+        flex-basis: 72px;
     }
 }
