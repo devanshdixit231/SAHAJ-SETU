@@ -1,334 +1,246 @@
-🚀 Sahaj Setu
+# 🚀 Sahaj Setu
 
-Every approval, one intelligent journey.
+> **Every approval, one intelligent journey.**
 
-Sahaj Setu is a unified, AI-assisted platform designed to simplify the
-journey of entrepreneurs through industrial approvals, application
-tracking, risk assessment, delay prediction, and coordinated
-inspections.
+**Sahaj Setu** is a unified, AI-assisted platform designed to simplify the journey of entrepreneurs through industrial approvals, application tracking, risk assessment, delay prediction, and coordinated inspections.
 
-The project is being developed for Smart India Hackathon 2026 under
-the problem statement:
+Developed for **Smart India Hackathon 2026** under the problem statement:
 
-"Efficiency in streamlining industrial approvals, compliance
-processes, and access to government support services."
+> **Efficiency in streamlining industrial approvals, compliance processes, and access to government support services.**
 
-🎯 Problem Statement
+---
 
-Entrepreneurs and businesses often need to obtain multiple approvals
-from different government departments. The process can involve:
+## 🧩 The Problem
 
-Multiple departments and portals
+Industrial businesses often need approvals from multiple government departments. The existing journey can involve:
 
-Repeated document submission
+- Multiple departments and portals
+- Repeated document submission
+- Limited visibility into application status
+- Lack of inter-department coordination
+- Unclear processing timelines
+- Separate inspection processes
+- Difficulty identifying which approvals are required
 
-Limited visibility into application status
+### Our Goal
 
-Lack of coordination between departments
+Sahaj Setu brings this journey into a **single, transparent and intelligent platform**.
 
-Unclear processing timelines
+---
 
-Separate inspection processes
-
-Difficulty identifying approval requirements
-
-Sahaj Setu aims to bring this journey into a single, transparent and
-intelligent platform.
-
-💡 Our Solution
+## 💡 Our Solution
 
 Sahaj Setu provides a centralized workflow where an entrepreneur can:
 
-Create an account
-
-Set up a business profile
-
-Discover relevant approvals
-
-Get approval recommendations
-
-View approval details
-
-Submit an application
-
-Upload required documents
-
-Receive a unique application ID
-
-Track the application
-
-Get risk and delay insights
-
-Coordinate joint inspections
-
-Government officers can review applications, assess risk, predict
-possible delays, update application status, and manage joint inspections
-from an officer dashboard.
-
-✨ Current Features
-
-🔐 Authentication & User Management
-
-User registration
-
-User login
-
-Officer login
-
-JWT-based authentication
-
-Role-based access control
-
-Protected API routes
-
-🏢 Business Profile
-
-Business information management
-
-Business type
-
-Industry
-
-Investment details
-
-State and district
-
-Business address
-
-MongoDB persistence
-
-💡 Approval Discovery
-
-Know Your Approvals interface
-
-Approval recommendations
-
-Approval details
-
-Department information
-
-Approval type and business relevance
-
-📝 Application Management
-
-Application form
-
-Application API
-
-Automatic application ID generation
-
-Application storage in MongoDB
-
-Applicant application retrieval
-
-Application tracking
-
-Application status management
-
-📎 Document Upload
-
-Actual document upload support
-
-Multipart form-data handling
-
-Uploaded document metadata stored with applications
-
-👨‍💼 Officer Dashboard
-
-Officer-specific dashboard
-
-Application overview
-
-Application search and filtering
-
-Application review
-
-Application status updates
-
-Risk assessment
-
-Delay prediction
-
-Joint inspection management
-
-⚠️ Risk Scoring
-
-Sahaj Setu currently uses a rule-based risk scoring engine for
-demonstration purposes.
-
-It considers factors such as: - Document availability - Investment
-category - Industry type - Application status - Business address
-availability
-
-The system generates: - Risk score - Risk level - Risk factors -
-Recommendation
-
-⏱️ Delay Prediction
-
-A rule-based delay prediction service currently estimates: - Expected
-processing time - Minimum/maximum processing range - Delay risk -
-Predicted delay - Reasons contributing to delay
-
-The current implementation is a demonstrative intelligence layer and
-is not presented as a production ML model.
-
-🤝 Joint Inspection Coordination
-
-Officers can: - Create a joint inspection - Add multiple departments -
-Suggest an inspection date - Add inspection location - Add coordination
-notes - Schedule inspections - Update inspection status - Monitor
-inspection progress
-
-Applicants can see inspection tracking information from their
-application dashboard.
-
-🏗️ Technology Stack
-
-Frontend
-
-HTML5
-
-CSS3
-
-JavaScript
-
-Responsive dashboard UI
-
-Backend
-
-Node.js
-
-Express.js
-
-REST APIs
-
-JWT Authentication
-
-Multer for document uploads
-
-bcryptjs for password hashing
-
-Database
-
-MongoDB
-
-Mongoose
-
-Development Tools
-
-VS Code
-
-Git
-
-GitHub
-
-Thunder Client / API testing tools
-
-MongoDB
-
-📁 Project Structure
-
-NSWS/
+1. Create an account
+2. Set up a business profile
+3. Discover relevant approvals
+4. Get approval recommendations
+5. View approval details
+6. Submit an application
+7. Upload required documents
+8. Receive a unique application ID
+9. Track the application
+10. View risk and delay insights
+11. Coordinate joint inspections
+
+Government officers can use the officer dashboard to review applications, assess risk, identify possible delays, update application status and coordinate inspections.
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication & User Management
+- User registration and login
+- Officer login
+- JWT-based authentication
+- Role-based access control
+- Protected API routes
+
+### 🏢 Business Profile
+- Business information management
+- Business type and industry
+- Investment details
+- State and district
+- Business address
+- MongoDB persistence
+
+### 💡 Approval Discovery
+- Know Your Approvals
+- Approval recommendations
+- Approval details
+- Department information
+- Business-relevant approval information
+
+### 📝 Application Management
+- Application submission
+- Automatic application ID generation
+- MongoDB storage
+- Applicant application retrieval
+- Application tracking
+- Application status management
+
+### 📎 Document Management
+- Multipart document upload
+- Uploaded document metadata
+- Document availability considered during risk assessment
+
+### 👨‍💼 Officer Dashboard
+- Application overview
+- Search and filtering
+- Application review
+- Status updates
+- Risk assessment
+- Delay prediction
+- Joint inspection management
+
+### ⚠️ Risk Scoring
+The current prototype uses a **rule-based risk scoring engine** for demonstration.
+
+Factors include:
+- Document availability
+- Investment category
+- Industry type
+- Application status
+- Business address availability
+
+Outputs:
+- Risk score
+- Risk level
+- Risk factors
+- Recommendation
+
+### ⏱️ Delay Prediction
+The current prototype uses a **rule-based demonstrative intelligence layer**, not a production ML model.
+
+It estimates:
+- Expected processing time
+- Minimum/maximum processing range
+- Delay risk
+- Predicted delay
+- Reasons contributing to delay
+
+### 🤝 Joint Inspection Coordination
+Officers can:
+- Create joint inspections
+- Add multiple departments
+- Suggest inspection dates
+- Add inspection locations
+- Add coordination notes
+- Schedule inspections
+- Update inspection status
+- Monitor inspection progress
+
+Applicants can view inspection tracking information from their dashboard.
+
+---
+
+## 🔄 Application Workflow
+
+```text
+User Registration / Login
+          ↓
+Business Profile
+          ↓
+Know Your Approvals
+          ↓
+Approval Recommendation
+          ↓
+Approval Details
+          ↓
+Application Form
+          ↓
+Document Upload
+          ↓
+Application ID Generated
+          ↓
+MongoDB Storage
+          ↓
+Application Tracking
+          ↓
+┌───────────────────────────────┐
+│      Officer Dashboard        │
+└───────────────────────────────┘
+          ↓
+Risk Assessment
+          ↓
+Delay Prediction
+          ↓
+Joint Inspection Coordination
+          ↓
+Application Status Update
+```
+
+---
+
+## 🏗️ Technology Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | Node.js, Express.js |
+| APIs | REST APIs |
+| Authentication | JWT, bcryptjs |
+| Database | MongoDB, Mongoose |
+| File Upload | Multer |
+| Development | VS Code, Git, GitHub |
+| API Testing | Thunder Client / API testing tools |
+
+---
+
+## 📁 Project Structure
+
+```text
+SAHAJ-SETU/
 │
 ├── Backend/
 │   ├── config/
-│   │   └── db.js
-│   │
 │   ├── controllers/
-│   │   ├── applicationController.js
-│   │   ├── authController.js
-│   │   ├── businessController.js
-│   │   └── inspectionController.js
-│   │
 │   ├── middleware/
-│   │   ├── authMiddleware.js
-│   │   ├── officerMiddleware.js
-│   │   └── uploadMiddleware.js
-│   │
 │   ├── models/
-│   │   ├── Application.js
-│   │   ├── Business.js
-│   │   ├── Inspection.js
-│   │   └── User.js
-│   │
 │   ├── routes/
-│   │   ├── applicationRoutes.js
-│   │   ├── authRoutes.js
-│   │   ├── businessRoutes.js
-│   │   └── inspectionRoutes.js
-│   │
 │   ├── services/
-│   │   ├── delayPredictionService.js
-│   │   └── riskScoringService.js
-│   │
 │   ├── uploads/
 │   ├── .env
 │   ├── package.json
 │   └── server.js
 │
-└── Frontend/
-    ├── app.js
-    ├── dashboard.html
-    ├── login.html
-    ├── login.js
-    ├── login.css
-    ├── register.html
-    ├── register.js
-    ├── register.css
-    ├── style.css
-    ├── officer-dashboard.html
-    ├── officer-dashboard.js
-    └── officer-dashboard.css
+├── Frontend/
+│   ├── app.js
+│   ├── dashboard.html
+│   ├── login.html
+│   ├── login.js
+│   ├── login.css
+│   ├── register.html
+│   ├── register.js
+│   ├── register.css
+│   ├── officer-dashboard.html
+│   ├── officer-dashboard.js
+│   └── officer-dashboard.css
+│
+├── SAHAJ_SETU_Officer_Dashboard_Proxy_Data.csv
+└── README.md
+```
 
-🔄 Application Workflow
+---
 
-User Registration/Login
-          ↓
-    Business Profile
-          ↓
-   Know Your Approvals
-          ↓
- Approval Recommendation
-          ↓
-    Approval Details
-          ↓
-   Application Form
-          ↓
-   Document Upload
-          ↓
- Application ID Generated
-          ↓
-     MongoDB Storage
-          ↓
-  Application Tracking
-          ↓
- ┌───────────────────────────┐
- │     Officer Dashboard     │
- └───────────────────────────┘
-          ↓
-     Risk Assessment
-          ↓
-     Delay Prediction
-          ↓
- Joint Inspection Coordination
-          ↓
-   Application Status Update
+## 🔌 Main API Modules
 
-🔌 Main API Modules
-
-Authentication
-
+### Authentication
+```text
 POST /api/auth/register
 POST /api/auth/login
 GET  /api/auth/me
+```
 
-Business
-
+### Business
+```text
 GET /api/business/me
 PUT /api/business/me
+```
 
-Applications
-
+### Applications
+```text
 POST  /api/applications
 GET   /api/applications/me
 GET   /api/applications/officer/all
@@ -336,172 +248,190 @@ GET   /api/applications/:applicationId
 PATCH /api/applications/:applicationId/status
 GET   /api/applications/:applicationId/risk
 GET   /api/applications/:applicationId/delay
+```
 
-Joint Inspections
-
+### Joint Inspections
+```text
 POST  /api/inspections
 GET   /api/inspections/officer/all
 GET   /api/inspections/:applicationId
 PATCH /api/inspections/:applicationId/schedule
 PATCH /api/inspections/:applicationId/status
+```
 
-⚙️ Local Setup
+---
 
-1. Clone the repository
+## ⚙️ Local Setup
 
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd NSWS
+### 1. Clone the repository
 
-2. Install backend dependencies
+```bash
+git clone https://github.com/devanshdixit231/SAHAJ-SETU.git
+cd SAHAJ-SETU
+```
 
+### 2. Install backend dependencies
+
+```bash
 cd Backend
 npm install
+```
 
-3. Configure environment variables
+### 3. Configure environment variables
 
-Create a .env file inside Backend/:
+Create a `.env` file inside `Backend/`:
 
+```env
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/sahaj_setu
 JWT_SECRET=your_secure_jwt_secret
+```
 
-4. Start the backend
+### 4. Start the backend
 
-For development:
+Development mode:
 
+```bash
 npm run dev
+```
 
 Or:
 
+```bash
 node server.js
+```
 
 The backend runs on:
 
+```text
 http://localhost:5000
+```
 
-5. Run the frontend
+### 5. Run the frontend
 
-Open the Frontend folder and launch the HTML pages using a local
-development server such as VS Code Live Server.
+Open the required HTML files from the `Frontend` folder or serve the frontend through a local development server.
 
-🔒 Environment & Security
+---
 
-Do not commit sensitive credentials to GitHub.
+## 📊 Officer Dashboard & Power BI
 
-Add the following to .gitignore:
+The officer-side analytics layer is designed around:
 
-node_modules/
-.env
-uploads/
+- Application volume
+- Application status
+- Risk distribution
+- Department-wise workload
+- Processing time
+- Delay trends
+- Inspection coordination
+- High-risk application identification
 
-The repository should contain an example environment file if required:
+## 📚 Additional Data & References
 
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+A shared folder containing supporting material, additional data, references, research material and prototype resources is available here:
 
-📊 Current Development Status
+**[SAHAJ Setu — Additional Data & References](https://drive.google.com/drive/folders/1tROH7fBH_9YNkaG61yUzGEUp705kR-Gi?usp=drive_link)**
 
-Module                                Status
+### Useful Research / Reference Sources
 
-🎨 Login/Register UI                  ✅
-🔐 JWT Authentication                 ✅
-👤 User/Officer Roles                 ✅
-🏢 Business Profile                   ✅
-🗄️ MongoDB Connection                 ✅
-💡 Know Your Approvals                ✅
-📋 Approval Recommendation            ✅
-📄 Approval Details                   ✅
-📝 Application Form                   ✅
-🚀 Application API                    ✅
-🆔 Application ID Generation          ✅
-📊 Application Storage & Retrieval    ✅
-📎 Document Upload                    ✅
-🖥️ Real Application API Integration   ✅
-📊 Real Application Tracking          ✅
-👨‍💼 Officer Dashboard                  ✅
-⚠️ Risk Scoring                       ✅
-⏱️ Delay Prediction                   ✅
-🤝 Joint Inspection Coordination      ✅
-🔔 Real Notifications                 ⏳
-🤖 AI Assistant                       ⏳
-🧾 Compliance / Trust Score           ⏳
-🏛️ Government-Service Integration     ⏳
-🧪 Final Testing & Polishing          ⏳
+- **National Single Window System (NSWS)**  
+  https://www.nsws.gov.in/
 
-🚀 Future Roadmap
+- **Maharashtra Single Window / MAITRI ecosystem**  
+  https://maitri.mahaonline.gov.in/
 
-Phase 1 --- Intelligence
+- **Department for Promotion of Industry and Internal Trade (DPIIT)**  
+  https://dpiit.gov.in/
 
-AI conversational assistant
+- **World Bank — Doing Business / Business Regulation research archive**  
+  https://www.worldbank.org/en/programs/business-enabling-environment
 
-Smarter approval recommendations
+These sources provide background for understanding business regulation, approvals, investment facilitation and digital government-service workflows.
 
-ML-based risk scoring
+---
 
-ML-based delay prediction
+## 🧠 AI / Intelligence Layer
 
-Document intelligence and validation
+The current prototype intentionally separates **demonstration intelligence** from production-grade ML.
 
-Phase 2 --- Compliance
+### Current Prototype
 
-Compliance tracking
+```text
+Application Data
+      ↓
+Rule-Based Risk Scoring
+      ↓
+Risk Level + Factors
+```
 
-Compliance reminders
+and
 
-Business compliance history
+```text
+Application Data
+      ↓
+Rule-Based Delay Estimation
+      ↓
+Expected Processing Time
+      ↓
+Delay Risk + Reasons
+```
 
-Portable compliance/trust score
+### Future ML Extension
 
-Phase 3 --- Government Integration
+The architecture can later be extended with historical application data for:
 
-Integration with government services and APIs
+- ML-based delay prediction
+- Risk classification
+- Processing-time forecasting
+- Department workload prediction
+- Approval bottleneck detection
 
-Department-level workflow integration
+This keeps the current prototype transparent while leaving a clear path toward data-driven intelligence.
 
-Real-time application status synchronization
+---
 
-Notifications and alerts
+## 🎯 Expected Impact
 
-Phase 4 --- Production Readiness
+Sahaj Setu aims to improve the industrial approval journey by:
 
-Advanced security
+- Reducing fragmented approval workflows
+- Improving application visibility
+- Helping officers prioritize applications
+- Identifying potential delays earlier
+- Supporting inter-department coordination
+- Providing a centralized experience for entrepreneurs
 
-Audit logs
+---
 
-Role and permission management
+## 🛡️ Prototype Disclaimer
 
-Performance optimization
+Sahaj Setu is a **Smart India Hackathon 2026 prototype**.
 
-Automated testing
+Risk scoring and delay prediction in the current implementation are demonstrative rule-based systems. The proxy dataset is synthetic and intended only for development, dashboard design and demonstration.
 
-Deployment
+The prototype should not be interpreted as a production government decision-making system.
 
-Monitoring and analytics
+---
 
-🎯 Vision
+## 👥 Team SAHAJ
 
-Sahaj Setu aims to make the industrial approval journey:
+**Project:** Sahaj Setu  
+**Event:** Smart India Hackathon 2026  
+**Problem Area:** Industrial approvals, compliance and government support services
 
-Simple → Transparent → Predictable → Coordinated
+---
 
-Instead of entrepreneurs navigating disconnected approval processes,
-Sahaj Setu brings the journey together through a unified platform with
-intelligent assistance.
+## 📌 Repository
 
-Every approval, one intelligent journey.
+**GitHub:**  
+https://github.com/devanshdixit231/SAHAJ-SETU
 
-👥 Team
+**Additional Data & References:**  
+https://drive.google.com/drive/folders/1tROH7fBH_9YNkaG61yUzGEUp705kR-Gi?usp=drive_link
 
-TEAM SAHAJ
 
-Built for Smart India Hackathon 2026.
+---
 
-📌 Project Status
+## 📄 License
 
-🚧 Active Development
-
-This repository contains the current working implementation of Sahaj
-Setu. Features marked as pending are planned for subsequent development
-phases.
-done
+This project is developed as a prototype for **Smart India Hackathon 2026**.
